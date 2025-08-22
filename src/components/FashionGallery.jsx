@@ -15,16 +15,28 @@ const FashionGallery = () => {
     // const images = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14, image15];
     return (
         <div className="w-full min-h-screen -mt-4 p-2 bg-white/80">
-            <p className="md:text-4xl text-2xl font-semibold">
+            <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+                className="md:text-4xl text-2xl font-semibold">
                 Experience the timeless style and cultural richness of the fashion Africa through <br /> our curated gallery.
-            </p>
+            </motion.p>
             <hr className='my-4 border-t-2 border-gray-200' />
 
-            <p className='mb-2 font-semibold'>Fashion Through the Decades-African Fashion from the 60's to the Present</p>
+            <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+                className='mb-2 font-semibold'>Fashion Through the Decades-African Fashion from the 60's to the Present</motion.p>
 
             <div className="columns-2 sm:columns-2 md:columns-4 gap-3 space-y-4" id='gallery'>
                 {images.map((img, idx) => (
-                    <img
+                    <motion.img
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 0.5 }}
                         key={idx}
                         src={img}
                         alt={`Fashion ${idx + 1}`}
