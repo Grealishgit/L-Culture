@@ -7,14 +7,18 @@ const Header = () => {
             style={{ backgroundImage: `url(${bg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
         >
             <div className='items-center text-center space-y-2 flex flex-col'>
-                <h1 className='text-white md:text-8xl text-5xl font-bold'>BULL FIGHTING</h1>
-                <p className='text-white text-lg'>A show of elegant Luhya fashion</p>
+                <h1 className='text-white md:text-8xl text-5xl font-bold'>FASHION AFRICA</h1>
+                <p className='text-white text-lg'>A show of elegant African fashion</p>
 
                 <button className='px-3 py-2.5 border cursor-pointer mt-4 text-white border-white rounded'>
                     Explore the fashion
                 </button>
             </div>
 
+            <div className='absolute items-center flex bottom-0 p-4'>
+                <p className='text-white text-center'>A vibrant showcase of African culture and style. Experience the richness of African heritage through fashion.
+                </p>
+            </div>
         </div>
     )
 }
