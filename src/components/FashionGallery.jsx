@@ -18,6 +18,7 @@ const FashionGallery = () => {
             <section id="about">
                 <motion.p
                     initial={{ y: 50, opacity: 0 }}
+                    whileInView={{ opacity: 1, y: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
                     className="md:text-4xl text-2xl font-semibold">
@@ -27,6 +28,7 @@ const FashionGallery = () => {
 
                 <motion.p
                     initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5 }}
                     className='mb-2 font-semibold'>Fashion Through the Decades-African Fashion from the 60's to the Present.
@@ -53,6 +55,7 @@ const FashionGallery = () => {
                 <motion.h1
                     initial={{ y: 50, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
+                    whileInView={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
                     className='font-semibold text-2xl mb-2'>
                     The story Behind the African Fashion.
@@ -62,6 +65,7 @@ const FashionGallery = () => {
                         <motion.p
                             initial={{ y: 20, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
+                            whileInView={{ y: 0, opacity: 1 }}
                             transition={{ duration: 0.5, delay: 0.2 }}
                         >The African fashion industry is a vibrant and dynamic space that reflects the continent's rich cultural heritage and diversity.
                             From traditional garments to contemporary designs, African fashion tells the story of its people, their history,
@@ -70,6 +74,7 @@ const FashionGallery = () => {
 
                         <motion.p
                             initial={{ y: 40, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
                             animate={{ y: 0, opacity: 1 }}
                             transition={{ duration: 1.5, delay: 0.2 }}
                             className='mt-5'>
@@ -80,6 +85,7 @@ const FashionGallery = () => {
 
                         <motion.p
                             initial={{ y: 60, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
                             animate={{ y: 0, opacity: 1 }}
                             transition={{ duration: 2.5, delay: 0.2 }}
                             className='mt-5'>
@@ -100,6 +106,7 @@ const FashionGallery = () => {
             <div className='w-full p-4 mt-5'>
                 <motion.h1
                     initial={{ x: 50, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
                     animate={{ x: 0, opacity: 1 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
                     className='font-semibold text-2xl mb-2'>
@@ -109,11 +116,13 @@ const FashionGallery = () => {
                 <div className='flex flex-col gap-4 md:flex-row w-full'>
                     <motion.div
                         initial={{ y: 20, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.5, delay: 0.2 }}
                         className='flex-1'>
                         <motion.img
                             initial={{ y: -20, opacity: 0 }}
+                            whileInView={{ y: 0, opacity: 1 }}
                             animate={{ y: 0, opacity: 1 }}
                             transition={{ duration: 0.5, delay: 0.2 }}
                             src={image21} alt="" className='w-full h-150 object-cover' />
@@ -127,6 +136,7 @@ const FashionGallery = () => {
                                     alt={`Fashion ${idx + 1}`}
                                     className="w-full h-70 object-cover"
                                     initial={{ y: 20, opacity: 0 }}
+                                    whileInView={{ y: 0, opacity: 1 }}
                                     animate={{ y: 0, opacity: 1 }}
                                     transition={{ duration: 0.5, delay: 0.2 }}
                                 />
@@ -146,7 +156,7 @@ const FashionGallery = () => {
                                         alt={`Fashion ${idx + 1}`}
                                         className="w-full h-70 object-cover"
                                         initial={{ x: 20, opacity: 0 }}
-                                        animate={{ x: 0, opacity: 1 }}
+                                        whileInView={{ x: 0, opacity: 1 }}
                                         transition={{ duration: 0.5, delay: 0.2 }}
                                     />
                                 ))}
@@ -173,7 +183,7 @@ const FashionGallery = () => {
                                         alt={`Fashion ${idx + 1}`}
                                         className="w-full h-70 object-cover"
                                         initial={{ x: 70, opacity: 0 }}
-                                        animate={{ x: 0, opacity: 1 }}
+                                        whileInView={{ x: 0, opacity: 1 }}
                                         transition={{ duration: 0.5, delay: 0.2 }}
                                     />
                                 ))}
@@ -189,19 +199,19 @@ const FashionGallery = () => {
             <div className='mt-10 p-5 w-full' id='insights'>
                 <motion.h1
                     initial={{ y: 30, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
+                    whileInView={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
                     className='font-semibold text-2xl mb-2'>Cultural Insights
                 </motion.h1>
                 <div className='flex flex-col md:flex-row gap-4 mt-4'>
                     <motion.div
                         initial={{ y: 30, opacity: 0 }}
-                        animate={{ y: 0, opacity: 1 }}
+                        whileInView={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.5, delay: 0.2 }}
                         className='flex-1'>
                         <motion.p
                             initial={{ y: 30, opacity: 0 }}
-                            animate={{ y: 0, opacity: 1 }}
+                            whileInView={{ y: 0, opacity: 1 }}
                             transition={{ duration: 0.5, delay: 0.2 }}
                             className='text-gray-600'>
                             Discover the rich cultural heritage and contemporary influences that shape African fashion.
@@ -211,7 +221,7 @@ const FashionGallery = () => {
                         </motion.p>
                         <motion.p
                             initial={{ y: 60, opacity: 0 }}
-                            animate={{ y: 0, opacity: 1 }}
+                            whileInView={{ y: 0, opacity: 1 }}
                             transition={{ duration: 1.5, delay: 0.5 }}
                             className='mt-5 text-gray-700'>
                             <strong>Key Trends:</strong> Explore the latest trends in African fashion, from vibrant prints to innovative designs.
@@ -221,7 +231,7 @@ const FashionGallery = () => {
 
                         <motion.p
                             initial={{ y: 90, opacity: 0 }}
-                            animate={{ y: 0, opacity: 1 }}
+                            whileInView={{ y: 0, opacity: 1 }}
                             transition={{ duration: 2.5, delay: 0.8 }}
                             className='mt-5 text-gray-800'>
                             <strong>Influential Designers:</strong> Meet the trailblazers of African fashion who are redefining the industry.
@@ -231,7 +241,7 @@ const FashionGallery = () => {
 
                         <motion.p
                             initial={{ y: 100, opacity: 0 }}
-                            animate={{ y: 0, opacity: 1 }}
+                            whileInView={{ y: 0, opacity: 1 }}
                             transition={{ duration: 3.0, delay: 0.9 }}
                             className='mt-5 text-gray-900'>
                             <strong>Emerging Voices:</strong> Discover the new generation of African designers who are pushing boundaries and challenging norms.
@@ -241,12 +251,12 @@ const FashionGallery = () => {
                     <div className='flex-1'>
                         <motion.img
                             initial={{ x: -30, opacity: 0 }}
-                            animate={{ y: 0, opacity: 1 }}
+                            whileInView={{ y: 0, opacity: 1 }}
                             transition={{ duration: 0.5, delay: 0.2 }}
                             src={image13} alt="" className='w-full h-50 object-cover' />
                         <motion.img
                             initial={{ x: 30, opacity: 0 }}
-                            animate={{ y: 0, opacity: 1 }}
+                            whileInView={{ y: 0, opacity: 1 }}
                             transition={{ duration: 0.5, delay: 0.2 }}
                             src={image10} alt="" className='w-full h-50 object-cover' />
                     </div>

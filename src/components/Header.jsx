@@ -5,7 +5,7 @@ import { motion } from 'motion/react'
 
 const Header = () => {
     return (
-        <div className='flex flex-col absolute top-0 left-0 object-cover w-screen items-center justify-center min-h-screen'
+        <div className='flex flex-col absolute top-0 left-0 object-cover w-full items-center justify-center min-h-screen'
             style={{ backgroundImage: `url(${bg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
         >
             <motion.div

@@ -84,19 +84,19 @@ const Navbar = () => {
                 {/* Desktop menu */}
                 <div className='ml-4'>
                     <ul className='md:flex hidden space-x-4'>
-                        <li className={`md:nav-anim text-white font-quicksand font-semibold cursor-pointer${isActive === 'home' ? ' active' : ''}`} onClick={() => handleScroll('home')}>
+                        <li className={`nav-anim text-white font-quicksand font-semibold cursor-pointer${isActive === 'home' ? ' active' : ''}`} onClick={() => handleScroll('home')}>
                             Home
                         </li>
-                        <li className={`md:nav-anim text-white font-quicksand font-semibold cursor-pointer${isActive === 'about' ? ' active' : ''}`} onClick={() => handleScroll('about')}>
+                        <li className={`nav-anim text-white font-quicksand font-semibold cursor-pointer${isActive === 'about' ? ' active' : ''}`} onClick={() => handleScroll('about')}>
                             About the Festival
                         </li>
-                        <li className={`md:nav-anim text-white font-quicksand font-semibold cursor-pointer${isActive === 'gallery' ? ' active' : ''}`} onClick={() => handleScroll('gallery')}>
+                        <li className={`nav-anim text-white font-quicksand font-semibold cursor-pointer${isActive === 'gallery' ? ' active' : ''}`} onClick={() => handleScroll('gallery')}>
                             Fashion Gallery
                         </li>
-                        <li className={`md:nav-anim text-white font-quicksand font-semibold cursor-pointer${isActive === 'highlights' ? ' active' : ''}`} onClick={() => handleScroll('highlights')}>
+                        <li className={`nav-anim text-white font-quicksand font-semibold cursor-pointer${isActive === 'highlights' ? ' active' : ''}`} onClick={() => handleScroll('highlights')}>
                             Fashion Highlights
                         </li>
-                        <li className={`md:nav-anim text-white font-quicksand font-semibold cursor-pointer${isActive === 'insights' ? ' active' : ''}`} onClick={() => handleScroll('insights')}>
+                        <li className={`nav-anim text-white font-quicksand font-semibold cursor-pointer${isActive === 'insights' ? ' active' : ''}`} onClick={() => handleScroll('insights')}>
                             Cultural Insights
                         </li>
                     </ul>
@@ -116,26 +116,32 @@ const Navbar = () => {
             </div>
             {/* Mobile menu slide-out */}
             <div className={`menu-slide${menuOpen ? ' open' : ''}`}>
-                <div className='close-icon' onClick={() => setMenuOpen(false)} style={{ alignSelf: 'flex-end', marginBottom: '1rem', transform: menuOpen ? 'rotate(90deg)' : 'rotate(0deg)' }}>
+                <div className='close-icon' onClick={() => setMenuOpen(false)}
+                    style={{ alignSelf: 'flex-end', marginBottom: '1rem', transform: menuOpen ? 'rotate(90deg)' : 'rotate(0deg)' }}>
                     <svg viewBox="0 0 24 24" fill="none" strokeWidth="2">
                         <line x1="6" y1="6" x2="18" y2="18" />
                         <line x1="6" y1="18" x2="18" y2="6" />
                     </svg>
                 </div>
                 <ul>
-                    <li className={`nav-anim text-white font-quicksand font-semibold cursor-pointer${isActive === 'home' ? ' active' : ''}`} onClick={() => { handleScroll('home'); setMenuOpen(false); }}>
+                    <li className={`nav-anim text-white font-quicksand font-semibold cursor-pointer
+                         ${isActive === 'home' ? ' active' : ''}`} onClick={() => { handleScroll('home'); setMenuOpen(false); }}>
                         Home
                     </li>
-                    <li className={`nav-anim text-white font-quicksand font-semibold cursor-pointer${isActive === 'about' ? ' active' : ''}`} onClick={() => { handleScroll('about'); setMenuOpen(false); }}>
+                    <li className={`nav-anim text-white font-quicksand font-semibold cursor-pointer
+                         ${isActive === 'about' ? ' active' : ''}`} onClick={() => { handleScroll('about'); setMenuOpen(false); }}>
                         About the Festival
                     </li>
-                    <li className={`nav-anim text-white font-quicksand font-semibold cursor-pointer${isActive === 'gallery' ? ' active' : ''}`} onClick={() => { handleScroll('gallery'); setMenuOpen(false); }}>
+                    <li className={`nav-anim text-white font-quicksand font-semibold cursor-pointer
+                        ${isActive === 'gallery' ? ' active' : ''}`} onClick={() => { handleScroll('gallery'); setMenuOpen(false); }}>
                         Fashion Gallery
                     </li>
-                    <li className={`nav-anim text-white font-quicksand font-semibold cursor-pointer${isActive === 'highlights' ? ' active' : ''}`} onClick={() => { handleScroll('highlights'); setMenuOpen(false); }}>
+                    <li className={`nav-anim text-white font-quicksand font-semibold cursor-pointer
+                        ${isActive === 'highlights' ? ' active' : ''}`} onClick={() => { handleScroll('highlights'); setMenuOpen(false); }}>
                         Fashion Highlights
                     </li>
-                    <li className={`nav-anim text-white font-quicksand font-semibold cursor-pointer${isActive === 'insights' ? ' active' : ''}`} onClick={() => { handleScroll('insights'); setMenuOpen(false); }}>
+                    <li className={`nav-anim text-white font-quicksand font-semibold cursor-pointer
+                        ${isActive === 'insights' ? ' active' : ''}`} onClick={() => { handleScroll('insights'); setMenuOpen(false); }}>
                         Cultural Insights
                     </li>
                 </ul>
