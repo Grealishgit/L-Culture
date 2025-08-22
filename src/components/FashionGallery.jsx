@@ -88,6 +88,48 @@ const FashionGallery = () => {
                         </div>
                     </div>
                 </div>
+
+                <div className='mt-6'>
+                    <div className='flex flex-col gap-4 md:flex-row w-full'>
+                        <div className='flex-1'>
+                            <div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4'>
+                                {images.slice(0, 6).map((img, idx) => (
+                                    <img
+                                        key={idx}
+                                        src={img}
+                                        alt={`Fashion ${idx + 1}`}
+                                        className="w-full h-70 object-cover"
+                                    />
+                                ))}
+                            </div>
+                        </div>
+                        <div className='flex-1'>
+                            <img src={image5} alt="" className='w-full h-150 object-cover' />
+                        </div>
+                    </div>
+                </div>
+
+
+                <div className='mt-6'>
+                    <div className='flex flex-col gap-4 md:flex-row w-full'>
+                        <div className='flex-1'>
+                            <img src={image12} alt="" className='w-full h-150 object-cover' />
+                        </div>
+                        <div className='flex-1'>
+                            <div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4'>
+                                {images.slice(0, 6).map((img, idx) => (
+                                    <img
+                                        key={idx}
+                                        src={img}
+                                        alt={`Fashion ${idx + 1}`}
+                                        className="w-full h-70 object-cover"
+                                    />
+                                ))}
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
 
         </div>
