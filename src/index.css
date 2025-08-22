@@ -1,20 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Macondo&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Signika:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-
 @import 'tailwindcss';
 
 * {
   font-family: "Playfair Display", serif;
 }
-.gallery {
+/* .gallery {
   width: min(1000px, 100%);
   margin: 10px auto;
   columns: 4 300px;
   column-gap: 1em;
 }
 
+*/
 img {
   display: block;
   width: 100%;
   margin-bottom: 1em;
+}
+.font-quicksand {
+  font-family: "Quicksand", sans-serif;
 }
