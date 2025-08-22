@@ -36,6 +36,35 @@ const FashionGallery = () => {
                     />
                 ))}
             </div>
+
+
+            <div className=' mt-10 p-5 w-full'>
+                <h1 className='font-semibold text-2xl mb-2'>The story Behind the African Fashion</h1>
+                <div className='flex flex-col md:flex-row gap-4 mt-4'>
+                    <div className='flex-1'>
+
+                        <p>The African fashion industry is a vibrant and dynamic space that reflects the continent's rich cultural heritage and diversity.
+                            From traditional garments to contemporary designs, African fashion tells the story of its people, their history,
+                            and their aspirations.
+                        </p>
+                        <p className='mt-5'>
+                            The African fashion industry is not just about clothing; it's a powerful means of expression and identity for many.
+                            Designers draw inspiration from their cultural roots,
+                            using traditional techniques and materials to create pieces that resonate with both local and global audiences.
+                        </p>
+
+                        <p className='mt-5'>
+                            Rooted in tradition, African fashion is a celebration of cultural identity and creativity.
+                            Today, it continues to evolve, incorporating modern influences while honoring its rich heritage.
+                            The industry is thriving, with designers gaining international recognition and showcasing their work on global platforms.
+                        </p>
+                    </div>
+
+                    <div className='flex-1'>
+                        <img src={image6} alt="" className='w-full h-80 object-cover' />
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
