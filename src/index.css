@@ -6,3 +6,15 @@
 * {
   font-family: "Playfair Display", serif;
 }
+.gallery {
+  width: min(1000px, 100%);
+  margin: 10px auto;
+  columns: 4 300px;
+  column-gap: 1em;
+}
+
+img {
+  display: block;
+  width: 100%;
+  margin-bottom: 1em;
+}
