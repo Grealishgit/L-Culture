@@ -26,13 +26,13 @@ const FashionGallery = () => {
 
             <p className='mb-2 font-semibold'>Fashion Through the Decades-African Fashion from the 60's to the Present</p>
 
-            <div className="columns-2 sm:columns-2 md:columns-4 gap-4 space-y-4">
+            <div className="columns-2 sm:columns-2 md:columns-4 gap-3 space-y-4">
                 {images.map((img, idx) => (
                     <img
                         key={idx}
                         src={img}
                         alt={`Fashion ${idx + 1}`}
-                        className="w-full mb-4  shadow-lg break-inside-avoid"
+                        className="w-full mb-4 break-inside-avoid"
                     />
                 ))}
             </div>
