@@ -14,22 +14,24 @@ import image10 from '../assets/f1 (16).jpg'
 const FashionGallery = () => {
     // const images = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13, image14, image15];
     return (
-        <div className="w-full min-h-screen -mt-4 p-2 bg-white/80">
-            <motion.p
-                initial={{ y: 50, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-                className="md:text-4xl text-2xl font-semibold">
-                Experience the timeless style and cultural richness of the fashion Africa through <br /> our curated gallery.
-            </motion.p>
-            <hr className='my-4 border-t-2 border-gray-200' />
+        <div className="w-full min-h-screen -mt-4 p-2 bg-white/80" id="home">
+            <section id="about">
+                <motion.p
+                    initial={{ y: 50, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
+                    className="md:text-4xl text-2xl font-semibold">
+                    Experience the timeless style and cultural richness of the fashion Africa through <br /> our curated gallery.
+                </motion.p>
+                <hr className='my-4 border-t-2 border-gray-200' />
 
-            <motion.p
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}
-                className='mb-2 font-semibold'>Fashion Through the Decades-African Fashion from the 60's to the Present.
-            </motion.p>
+                <motion.p
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.5 }}
+                    className='mb-2 font-semibold'>Fashion Through the Decades-African Fashion from the 60's to the Present.
+                </motion.p>
+            </section>
 
             <div className="columns-2 sm:columns-2 md:columns-4 gap-3 space-y-4" id='gallery'>
                 {images.map((img, idx) => (
@@ -47,7 +49,7 @@ const FashionGallery = () => {
             </div>
 
 
-            <div className='mt-10 p-5 w-full' id='story-behind-african-fashion'>
+            <div className='mt-10 p-5 w-full' id='highlights'>
                 <motion.h1
                     initial={{ y: 50, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
@@ -184,7 +186,7 @@ const FashionGallery = () => {
 
 
             {/* cultural insights */}
-            <div className='mt-10 p-5 w-full' id='cultural-insights'>
+            <div className='mt-10 p-5 w-full' id='insights'>
                 <motion.h1
                     initial={{ y: 30, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
