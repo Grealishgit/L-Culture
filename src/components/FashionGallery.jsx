@@ -135,29 +135,36 @@ const FashionGallery = () => {
 
             {/* cultural insights */}
             <div className='mt-10 p-5 w-full' id='cultural-insights'>
+                <h1 className='font-semibold text-2xl mb-2'>Cultural Insights</h1>
                 <div className='flex flex-col md:flex-row gap-4 mt-4'>
                     <div className='flex-1'>
-                        <h1 className='font-semibold text-2xl mb-2'>Cultural Insights</h1>
+
                         <p className='text-gray-600'>
                             Discover the rich cultural heritage and contemporary influences that shape African fashion.
                             From traditional textiles to modern designs, explore the stories behind the garments.
                             In this section, we delve into the cultural significance of fashion in Africa,
                             highlighting key trends and influential designers.
                         </p>
-                        <p>
+                        <p className='mt-5 text-gray-700'>
                             <strong>Key Trends:</strong> Explore the latest trends in African fashion, from vibrant prints to innovative designs.
                             From traditional garments to contemporary streetwear, discover how designers are blending cultural heritage with modern aesthetics.
                             Engraved patterns and intricate beadwork are making a comeback, showcasing the craftsmanship of African artisans.
                         </p>
-                        <p>
+
+                        <p className='mt-5 text-gray-800'>
                             <strong>Influential Designers:</strong> Meet the trailblazers of African fashion who are redefining the industry.
                             From established names to emerging talents, these designers are making waves on the global stage.
                             Their unique perspectives and innovative approaches are shaping the future of fashion in Africa.
                         </p>
+
+                        <p className='mt-5 text-gray-900'>
+                            <strong>Emerging Voices:</strong> Discover the new generation of African designers who are pushing boundaries and challenging norms.
+                            These creatives are using fashion as a platform for social change, addressing issues such as sustainability, identity, and representation.
+                        </p>
                     </div>
                     <div className='flex-1'>
-                        <img src={image13} alt="" />
-                        <img src={image10} alt="" />
+                        <img src={image13} alt="" className='w-full h-50 object-cover' />
+                        <img src={image10} alt="" className='w-full h-50 object-cover' />
                     </div>
                 </div>
             </div>
