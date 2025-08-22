@@ -41,19 +41,19 @@ const Navbar = () => {
                 </div>
                 <div className='ml-4'>
                     <ul className='md:flex hidden space-x-4'>
-                        <li className={`nav-anim text-white font-quicksand font-light cursor-pointer${isActive === 'home' ? ' active' : ''}`} onClick={() => handleScroll('home')}>
+                        <li className={`nav-anim text-white font-quicksand font-semibold cursor-pointer${isActive === 'home' ? ' active' : ''}`} onClick={() => handleScroll('home')}>
                             Home
                         </li>
-                        <li className={`nav-anim text-white font-quicksand font-light cursor-pointer${isActive === 'about' ? ' active' : ''}`} onClick={() => handleScroll('about')}>
+                        <li className={`nav-anim text-white font-quicksand font-semibold cursor-pointer${isActive === 'about' ? ' active' : ''}`} onClick={() => handleScroll('about')}>
                             About the Festival
                         </li>
-                        <li className={`nav-anim text-white font-quicksand font-light cursor-pointer${isActive === 'gallery' ? ' active' : ''}`} onClick={() => handleScroll('gallery')}>
+                        <li className={`nav-anim text-white font-quicksand font-semibold cursor-pointer${isActive === 'gallery' ? ' active' : ''}`} onClick={() => handleScroll('gallery')}>
                             Fashion Gallery
                         </li>
-                        <li className={`nav-anim text-white font-quicksand font-light cursor-pointer${isActive === 'highlights' ? ' active' : ''}`} onClick={() => handleScroll('highlights')}>
+                        <li className={`nav-anim text-white font-quicksand font-semibold cursor-pointer${isActive === 'highlights' ? ' active' : ''}`} onClick={() => handleScroll('highlights')}>
                             Fashion Highlights
                         </li>
-                        <li className={`nav-anim text-white font-quicksand font-light cursor-pointer${isActive === 'insights' ? ' active' : ''}`} onClick={() => handleScroll('insights')}>
+                        <li className={`nav-anim text-white font-quicksand font-semibold cursor-pointer${isActive === 'insights' ? ' active' : ''}`} onClick={() => handleScroll('insights')}>
                             Cultural Insights
                         </li>
                     </ul>
