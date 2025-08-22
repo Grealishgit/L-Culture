@@ -26,7 +26,7 @@ const FashionGallery = () => {
 
             <p className='mb-2 font-semibold'>Fashion Through the Decades-African Fashion from the 60's to the Present</p>
 
-            <div className="columns-2 sm:columns-2 md:columns-4 gap-3 space-y-4">
+            <div className="columns-2 sm:columns-2 md:columns-4 gap-3 space-y-4" id='gallery'>
                 {images.map((img, idx) => (
                     <img
                         key={idx}
@@ -38,7 +38,7 @@ const FashionGallery = () => {
             </div>
 
 
-            <div className=' mt-10 p-5 w-full'>
+            <div className='mt-10 p-5 w-full' id='story-behind-african-fashion'>
                 <h1 className='font-semibold text-2xl mb-2'>The story Behind the African Fashion</h1>
                 <div className='flex flex-col md:flex-row gap-4 mt-4'>
                     <div className='flex-1'>
@@ -61,10 +61,35 @@ const FashionGallery = () => {
                     </div>
 
                     <div className='flex-1'>
-                        <img src={image6} alt="" className='w-full h-80 object-cover' />
+                        <img src={image6} alt="" className='w-full md:h-80 h-auto object-cover' />
                     </div>
                 </div>
             </div>
+
+
+            {/* Fashion Africa Highlights */}
+            <div className='w-full p-4 mt-5'>
+                <h1 className='font-semibold text-2xl mb-2'>Fashion Africa Highlights</h1>
+
+                <div className='flex flex-col gap-4 md:flex-row w-full'>
+                    <div className='flex-1'>
+                        <img src={image7} alt="" className='w-full h-150 object-cover' />
+                    </div>
+                    <div className='flex-1'>
+                        <div className='grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4'>
+                            {images.slice(0, 6).map((img, idx) => (
+                                <img
+                                    key={idx}
+                                    src={img}
+                                    alt={`Fashion ${idx + 1}`}
+                                    className="w-full h-70 object-cover"
+                                />
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     )
 }
